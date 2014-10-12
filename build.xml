@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Projeto teste para o Agent" default="all">
+	<description>
+Testando o agent AOP
+    </description>
+
+	<target name="all" depends="compile,comAgent"/>
+
+	<target name="compile" description="compile classes">
+		<delete dir="bin" />
+		<mkdir dir="bin" />
+		<javac  source="1.6" srcdir="src" destdir="bin" debug="false" optimize="true" verbose="false" classpath="dist/agent.jar"/>
+	</target>
+	<target name="comAgent" description="roda o agent no build">
+		<java fork="yes" classpath="bin" classname="Teste">
+			<jvmarg value="-javaagent:dist/agent.jar"/>
+		</java>
+	</target>
+</project>
