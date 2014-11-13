@@ -13,7 +13,7 @@ Testando o agent AOP
 		<javac  source="1.6" srcdir="src" destdir="bin" debug="false" optimize="true" verbose="false" classpath="dist/agent.jar"/>
 	</target>
 	<target name="comAgent" description="roda o agent no build">
-		<java fork="yes" classpath="bin" classname="Teste">
+		<java fork="yes" classpath="bin" classname="Sistema.Main">
 			<jvmarg value="-javaagent:dist/agent.jar"/>
 		</java>
 	</target>
