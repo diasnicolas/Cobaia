@@ -15,13 +15,6 @@ public class Timing implements framework.aop.IAspect {
 		
 		System.out.println("Método levou: "+(System.currentTimeMillis()-this.start)+" ms.");
 		
-		if(result.getClass().getSimpleName()=="String")
-		{
-			//String a =  ((String)result)+" string interceptada";
-			//result = (Object)a;
-		}
-		
-		
 		return result;
 	}
 
