@@ -21,7 +21,7 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	@TimingAspect
+	@Around(Timing.class)
 	public String getSobrenome() {
 		return sobrenome;
 	}
