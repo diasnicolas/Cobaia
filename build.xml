@@ -10,10 +10,10 @@ Testando o agent AOP
 	<target name="compile" description="compile classes">
 		<delete dir="bin" />
 		<mkdir dir="bin" />
-		<javac  source="1.6" srcdir="src" destdir="bin" debug="false" optimize="true" verbose="false" classpath="dist/agent.jar"/>
+		<javac  source="1.6" includeantruntime="true" srcdir="src" destdir="bin" debug="true" optimize="true" verbose="false" classpath="dist/agent.jar"/>
 	</target>
 	<target name="comAgent" description="roda o agent no build">
-		<java fork="yes" classpath="bin" classname="Sistema.Main">
+		<java fork="yes" classpath="bin" classname="System.Main">
 			<jvmarg value="-javaagent:dist/agent.jar"/>
 		</java>
 	</target>

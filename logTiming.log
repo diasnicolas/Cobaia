@@ -1,0 +1,8 @@
+02/12/2014 06:38:01 Modules.Estoque loggertiming_around
+AVISO: O método carrega está muito lento. Executou em 7.446s.
+02/12/2014 06:38:05 Modules.Financeiro loggertiming_around
+INFO: O método carrega executou em: 3.765s.
+02/12/2014 06:38:07 Modules.Caixa loggertiming_around
+INFO: O método carrega executou em: 2.024s.
+02/12/2014 06:38:07 System.Sistema loggertiming_around
+AVISO: O método carregaModulos está muito lento. Executou em 13.335s.
